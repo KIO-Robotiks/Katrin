@@ -1,6 +1,7 @@
-# Katrin
-Робот Katrin.
+# Робот Katrin:
+- Отображает время, влажность, точку росы.
+- Имеет динамик для будильников.
 
-Отображает время, температуру, влажность, точку росы.
+![Katrin](https://github.com/KIO-Robotiks/Katrin/images/katrin-3d.jpg)
 
-Имеет динамик для будильников.
+![Katrin](https://github.com/KIO-Robotiks/Katrin/images/katrin-night.jpg)
