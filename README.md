@@ -2,6 +2,6 @@
 - Отображает время, влажность, точку росы.
 - Имеет динамик для будильников.
 
-![Katrin](https://github.com/KIO-Robotiks/Katrin/images/katrin-3d.jpg)
+![katrin-3d](https://github.com/KIO-Robotiks/Katrin/blob/main/images/katrin-3d.png)
 
-![Katrin](https://github.com/KIO-Robotiks/Katrin/images/katrin-night.jpg)
+![katrin-night](https://github.com/KIO-Robotiks/Katrin/blob/main/images/katrin-night.jpg)
