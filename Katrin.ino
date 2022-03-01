@@ -13,8 +13,12 @@ AHT10Class AHT10; // это нужно для работы Датчика тем
 float T;
 float H;
 float D;
-String UpTime = "06:30:00";
-String DownTime = "21:30:00";
+
+// String UpTime = "06:30:00";
+// String DownTime = "21:30:00";
+
+int UpTime[] = {7,00};
+int DownTime[] = {21,00};
 
 int ALARM = 2; // датчик движения  
 int SOUND = 7; // звук
@@ -63,7 +67,14 @@ void loop()
   readTH(5000);
   alarm();
   press1();
-  press2();   
+  press2();
+
+  if(time.Hours==UpTime[0] && time.minutes==UpTime[1] && time.seconds>=0 && time.seconds<3){
+    music();
+  }
+  if(time.Hours==DownTime[0] && time.minutes==DownTime[1] && time.seconds>=0 && time.seconds<3){
+    music();
+  }
 }
 
 
@@ -159,7 +170,7 @@ void music()
   //e.g. четверть ноты= 1000 / 4, восьмая часть = 1000/8, etc.
   int noteDuration = 700/Portal2[thisNote+1];
   tone (SOUND, Portal2[thisNote],noteDuration);
-  delay(200);        
+  delay(200);
   // noTone (8);
   }
 }
