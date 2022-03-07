@@ -17,8 +17,8 @@ float D;
 // String UpTime = "06:30:00";
 // String DownTime = "21:30:00";
 
-int UpTime[] = {7,00};
-int DownTime[] = {21,00};
+int UpTime[] = {7,0};
+int DownTime[] = {21,0};
 
 int ALARM = 2; // датчик движения  
 int SOUND = 7; // звук
@@ -69,10 +69,10 @@ void loop()
   press1();
   press2();
 
-  if(time.Hours==UpTime[0] && time.minutes==UpTime[1] && time.seconds>=0 && time.seconds<3){
+  if(time.Hours==UpTime[0] && time.minutes==UpTime[1] && time.seconds>=0 && time.seconds<4){
     music();
   }
-  if(time.Hours==DownTime[0] && time.minutes==DownTime[1] && time.seconds>=0 && time.seconds<3){
+  if(time.Hours==DownTime[0] && time.minutes==DownTime[1] && time.seconds>=0 && time.seconds<4){
     music();
   }
 }
@@ -174,4 +174,3 @@ void music()
   // noTone (8);
   }
 }
-
